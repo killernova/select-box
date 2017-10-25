@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="select-box.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="select-box.js"></script>
+</head>
+<body>
+    <div class="title">演示：</div>
+    <select name="course" class='course' value="">
+        <option value="">请选择课程</option>
+        <option value="1">数学</option>
+        <option value="2">语文</option>
+        <option value="3">英语</option>
+        <option value="4">政治</option>
+        <option value="5">化学</option>
+    </select>
+
+    <select name="money" class='course' value="">
+            <option value="">请选数字</option>
+            <option value="1">23</option>
+            <option value="2">34</option>
+            <option value="3">45</option>
+            <option value="4">56</option>
+            <option value="5">67</option>
+        </select>
+
+    <script>
+        $('.course').selectBox({}, function() {
+            console.log('I will write down this message before init the extension.')
+        });
+    </script>
+</body>
+</html>
