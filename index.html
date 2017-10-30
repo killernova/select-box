@@ -27,10 +27,11 @@
             <option value="3">45</option>
             <option value="4">56</option>
             <option value="5">67</option>
-        </select>
+    </select>
+
 
     <script>
-        $('.course').selectBox({}, function() {
+        $('.course').selectBox({search: true, prompt: true}, function() {
             console.log('I will write down this message before init the extension.')
         });
     </script>

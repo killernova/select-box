@@ -20,22 +20,38 @@
     z-index: 30;
     padding: 10px 0;
     max-height: 70%;
+    min-height: 250px;
     overflow:auto;
 }
+
+#select-box #title {
+    position: relative;
+    top: 20px;
+    height: 30px;
+}
 #select-box  .title {
-    margin-top: 10px;
-    margin-left: 5%;
-    float: left;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
     color: white;
     font-size: 1.2em;
     font-weight: bold;
 }
 #select-box .close {
-    margin-top: 10px;
-    float: right;
-    margin-right: 10px;
+    position: absolute;    
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
     color: white;
     width: 20px;
+}
+
+#select-box #body {
+    position: relative;
+    top: 40px;
+    left: 5%;
+    width: 90%;
 }
 .select-option {
     cursor: pointer;
@@ -44,13 +60,12 @@
 }
 .select-wrapper {
     width: 80%;
-    background-color: gray;
     cursor: pointer;
-    color: white;
     padding: 5px 10px;
     margin-top: 10px;
     position: relative;
     height: 20px;
+    border: 1px solid #ddd;
 
 }
 .select-wrapper .left {
@@ -67,10 +82,20 @@
     position: absolute;
     right: 0;
     top: 0;
-    background-color: rgb(43, 41, 41);
+    background-color: #ddd;
     z-index: 10;
     transform: rotate(90deg);
 }
 .clear {
     clear: both;
+}
+#search-box {
+    display: none;
+    position: relative;
+    top: 30px;
+    left: 5%;
+    width: 88%;
+}
+#search-box #search-input {
+    width: 100%;
 }
